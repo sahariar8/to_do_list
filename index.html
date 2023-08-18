@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="max-w-screen-2xl m-auto">
+    <header>
+        <h1 class="text-center text-2xl md:text-6xl font-bold mt-10">To Do <span class="text-red-800">List </span>🖐📚</h1>
+    </header>
+    <main>
+        <div class="text-center pt-20">
+            <input type="text" class="input input-success md:w-80 me-2 p-5 text-lg" placeholder="Type Here" id="value">
+            <button class="btn btn-outline btn-success bordered" id="btn">Add Task</button>
+
+        </div>
+        <section>
+            <div class="max-w-screen-sm m-auto mt-20">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="newData">
+
+                    </tbody>
+                   
+                    
+                </table>
+            </div>
+        </section>
+            <div class="max-w-screen-sm m-auto mt-20 flex justify-end">
+                <button type="button" class="btn  bg-red-400 hover:bg-red-500 hover:text-white" id="clearAll">Clear All</button>
+                
+            </div>
+        
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/todo.js"></script>
+</body>
+</html>
